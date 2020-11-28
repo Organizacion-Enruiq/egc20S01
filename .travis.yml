@@ -17,3 +17,11 @@ install:
 script:
   - cd decide
   - ./manage.py test census --keepdb --with-xunit
+
+notifications:
+  email:
+    recipients:
+      - jesbozmar@alum.us.es
+      - enruiq@gmail.com
+    on_success: always
+on_failure: always
