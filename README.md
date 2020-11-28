@@ -1,4 +1,4 @@
-
+[![Build Status](https://travis-ci.org/Organizacion-Enruiq/egc20S02.svg?branch=master)](https://travis-ci.org/Organizacion-Enruiq/egc20S02)
 
 Plataforma voto electrónico educativa
 =====================================
