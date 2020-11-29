@@ -1,4 +1,4 @@
-from python:alpine
+from python:3.7-alpine
 
 RUN apk add --no-cache git postgresql-dev gcc libc-dev
 RUN apk add --no-cache gcc g++ make libffi-dev python3-dev build-base
@@ -16,7 +16,7 @@ RUN pip install -r requirements.txt
 WORKDIR /app/decide
 
 # local settings.py
-ADD docker-settings.py /app/decide/local_settings.py
+ADD docker-settings.py /app/decide/docker-settings2.py
 
 RUN ./manage.py collectstatic
 
