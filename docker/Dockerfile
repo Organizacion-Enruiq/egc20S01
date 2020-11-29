@@ -10,13 +10,13 @@ RUN pip install ipython
 
 WORKDIR /app
 
-RUN git clone https://github.com/EGC/decide.git .
+RUN git clone https://github.com/Organizacion-Enruiq/decide.git .
 RUN pip install -r requirements.txt
 
 WORKDIR /app/decide
 
 # local settings.py
-ADD docker-settings.py /app/decide/docker-settings2.py
+ADD docker-settings2.py /app/decide/docker-settings2.py
 
 RUN ./manage.py collectstatic
 
